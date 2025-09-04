@@ -9,7 +9,7 @@ import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
 import { Link } from 'react-router-dom';
 
-const MenuAppBar = () => {
+const HeaderAppBar = () => {
 
     const [anchorEl, setAnchorEl] = React.useState(null);
     const [currentPage, setCurrentPage] = React.useState('Home')
@@ -25,7 +25,7 @@ const MenuAppBar = () => {
     };
 
     return (
-        <Box sx={{ flexGrow: 1 }}>
+        <Box id={'header-app-bar'} sx={{ flexGrow: 1 }}>
             <AppBar position="fixed">
                 <Toolbar>
                     <IconButton
@@ -69,4 +69,4 @@ const MenuAppBar = () => {
 
 }
 
-export default MenuAppBar
+export default HeaderAppBar
