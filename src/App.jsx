@@ -18,7 +18,14 @@ function App() {
         </Grid>
         <Grid>
           <main>
-            This is main content
+            <div className="content">
+              <Routes>
+                <Route path="/home" element={<Home />} />
+                <Route path="/area1" element={<Area1 />} />
+                <Route path="/area2" element={<Area2 />} />
+                {/* Add more routes as needed */}
+              </Routes>
+            </div>
           </main>
         </Grid>
       </Grid>
